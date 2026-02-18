@@ -1,0 +1,17 @@
+[
+  {
+    "nombre": "Guitarra acústica",
+    "precio": 150,
+    "descripcion": "Guitarra acústica de madera de caoba, ideal para principiantes."
+  },
+  {
+    "nombre": "Piano digital",
+    "precio": 300,
+    "descripcion": "Piano digital con 88 teclas, perfecto para ensayos y conciertos."
+  },
+  {
+    "nombre": "Batería electrónica",
+    "precio": 250,
+    "descripcion": "Batería electrónica con sonidos realistas y controlador de volumen."
+  }
+]
