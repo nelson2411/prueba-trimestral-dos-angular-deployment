@@ -2,9 +2,13 @@
 
 <div class="container">
   <h2>Lista de Instrumentos</h2>
-  <div class="card" *ngFor="let item of instruments">
-    <h3>{{ item.nombre }}</h3>
-    <p><Strong>Precio: </Strong> ${{ item.precio }}</p>
-    <p><Strong>Descripción: </Strong> {{ item.descripcion }}</p>
-  </div>
+  @for (item of instruments; track $index) {
+    <div class="card">
+      <h3>{{ item.nombre }}</h3>
+      <p><Strong>Precio: </Strong> ${{ item.precio }}</p>
+      <p><Strong>Descripción: </Strong> {{ item.descripcion }}</p>
+    </div>
+  } @empty {
+    <p>No hay instrumentos disponibles.</p>
+  }
 </div>

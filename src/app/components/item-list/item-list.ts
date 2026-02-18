@@ -14,8 +14,14 @@ export class ItemList implements OnInit {
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.dataService.getData().subscribe((data) => {
-      this.instruments = data;
+    this.dataService.getData().subscribe({
+      next: (data) => {
+        console.log('Data received:', data);
+        this.instruments = data;
+      },
+      error: (error) => {
+        console.error('Error fetching data:', error);
+      },
     });
   }
 }
